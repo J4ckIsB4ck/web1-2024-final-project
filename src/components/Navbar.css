@@ -1,0 +1,38 @@
+.StyledAppBar {
+    position: fixed;
+}
+
+.StyledToolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #332593;
+    background-image: linear-gradient(#332593,#6655d6c5);
+}
+
+.Text {
+    display: flex;
+    gap: 8px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.RightText {
+    display: flex;
+    gap: 30px;
+    font-size: 20px; 
+}
+
+a:hover {
+    background-color: #c3bdb3f5 ;
+}
+
+.Link {
+    text-decoration: none;
+    background-color: #6554cec5;
+    
+    padding: 10px 20px;
+    color: black;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #252049c5;
+}
