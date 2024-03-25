@@ -9,29 +9,30 @@
     background-image: linear-gradient(#332593,#6655d6c5);
 }
 
-.Text {
+.Text-logo {
     display: flex;
     gap: 8px;
     font-size: 25px;
     align-items: center;
+    font-weight: 600;
 }
 
-.RightText {
+.Links-navbar{
     display: flex;
     gap: 30px;
-    font-size: 20px; 
+    font-size: 20px;
+    font-weight: 600;
 }
 
 a:hover {
-    background-color: #c3bdb3f5 ;
+    background-color: #8bb6f28a ;
 }
 
 .Link {
     text-decoration: none;
     background-color: #6554cec5;
-    
+    color: white;
     padding: 10px 20px;
-    color: black;
     border-radius: 25px;
     border-style: solid;
     border-color: #252049c5;

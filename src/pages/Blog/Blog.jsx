@@ -1,11 +1,15 @@
 import { Box } from "@mui/material";
+import Navbar from "../../components/Navbar";
 import  "./Blog.css";
 
 function Blog() {
     return (
-      <Box className="box-blog">
-        <h1>Blog Page</h1>
-      </Box>
+      <>
+        <Navbar/>
+          <Box className="box-blog">
+            <h1>Blog Page</h1>
+        </Box>
+      </>
     );
   }
 
