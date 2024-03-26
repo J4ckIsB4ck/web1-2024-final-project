@@ -48,14 +48,33 @@
     background-color: #9c77ed;
     box-shadow: none;
 }
+.MuiButton-root.start-quiz-btn {
+    width: 150px;
+    height: 35px;
+    background-color: #6554cec5;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #6554cec5;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
 
+.MuiButton-root.start-quiz-btn:hover {
+    background-color: #9c77ed;
+    box-shadow: none;
+}
 .popup-select{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 500px;
+    width: 1200px;
+    height: 520px;
     background: #f3ecec;
     border-radius: 6px;
     padding: 10px 25px;
@@ -69,7 +88,8 @@
     transform: translate(-50%, -50%);
 }
 .popup-select h2{
-    font-size: 50px;
+    text-align: center ;
+    font-size: 40px;
     color: black;
 }
 .popup-select .info{
@@ -82,7 +102,7 @@
 .popup-select .btn-group{
     display:  flex;
     position: relative;
-    top: 50%;
+    top: 10px;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #999;
@@ -119,4 +139,9 @@
 .popup-select .btn-group .info-btn:nth-child(2):hover{
     background: #9a8eebc5;
     border-color: #9a8eebc5;
+}
+.flex-cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
