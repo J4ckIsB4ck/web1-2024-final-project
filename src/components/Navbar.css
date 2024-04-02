@@ -28,15 +28,13 @@
 }
 
 a:hover {
-    background-color: #8bb6f28a ;
+    background-color: #6c8cbb2e ;
 }
 
 .Link {
     text-decoration: none;
-    background-color: #6554cec5;
     color: white;
     padding: 10px 20px;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: #252049c5;
+    border-bottom: 3px solid #252049c5;
+    font-weight: 700;
 }

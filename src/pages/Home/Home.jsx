@@ -1,8 +1,8 @@
 import React, { useEffect, Fragment } from 'react';
 import Navbar from "../../components/Navbar";
-import "./Home.css";
 import PopupMenu from "../../components/Popupmenu";
 import HomeContainer from "../../components/HomeContainer";
+import "./Home.css";
 
 function Home() {
  useEffect(() => {
