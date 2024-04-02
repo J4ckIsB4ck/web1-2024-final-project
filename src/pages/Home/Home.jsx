@@ -1,12 +1,8 @@
 import React, { useEffect, Fragment } from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Navbar from "../../components/Navbar";
 import "./Home.css";
+import PopupMenu from "../../components/Popupmenu";
+import HomeContainer from "../../components/HomeContainer";
 
 function Home() {
  useEffect(() => {
@@ -39,76 +35,10 @@ function Home() {
                     <button className="start-btn">Start Quiz</button>
                   </div>
             </section>
+            <HomeContainer/>
           </div>
-
-          <div className="popup-select">
-            <h2>Select Quiz</h2>
-              <div className="flex-cards">
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    sx={{ height: 140 }}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="green iguana"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Geography
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button className="start-quiz-btn">Let's Go!</Button>
-                  </CardActions>
-                </Card>
-                
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    sx={{ height: 140 }}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="green iguana"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Informatics
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button className="start-quiz-btn">Let's Go!</Button>
-                  </CardActions>
-                </Card>
-
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardMedia
-                    sx={{ height: 140 }}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="green iguana"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      History
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button className="start-quiz-btn">Let's Go!</Button>
-                  </CardActions>
-                </Card>
-              </div> 
-            <div className="btn-group">
-              <button className="info-btn exit-btn">Exit</button>
-              <a href="#" className="info-btn continue-btn">Continue</a>
-            </div>
-          </div>
+        <PopupMenu/> 
+        
     </Fragment>
   );
 }
