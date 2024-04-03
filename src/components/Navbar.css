@@ -27,14 +27,36 @@
     font-weight: 300;
 }
 
-a:hover {
-    background-color: #6c8cbb2e ;
+.Link:after,
+.Link:before {
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+  
+.Link:hover:after,
+.Link:hover:before {
+    border-color: #fff;
+    transition: width 400ms ease-in-out;
+    width: 60%;
+  }
+  
+.Link:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
 }
 
 .Link {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    border-bottom: 3px solid #252049c5;
+    width: auto;
+    height: auto; 
     font-weight: 700;
 }

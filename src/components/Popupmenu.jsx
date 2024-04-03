@@ -9,6 +9,7 @@ import "./Popupmenu.css";
 
 function PopupMenu({ onClose }) {
   return (
+    
     <div className="popup-select">
       <h2>Select Quiz</h2>
       <div className="flex-cards">

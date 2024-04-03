@@ -2,6 +2,7 @@ import React, { useEffect, Fragment } from 'react';
 import Navbar from "../../components/Navbar";
 import PopupMenu from "../../components/Popupmenu";
 import HomeContainer from "../../components/HomeContainer";
+import Footer from "../../components/Footer";
 import "./Home.css";
 
 function Home() {
@@ -25,20 +26,23 @@ function Home() {
 }, []);
 
   return (
-    <Fragment>
-          <div className="main-home">
-          <Navbar/>
-            <section className="section-home">
-                  <div className="div-home">
-                    <h1>QuickB Website</h1>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                    <button className="start-btn">Start Quiz</button>
+    <Fragment>  
+        <div className="main-home">
+            <Navbar/>
+              <div className='main-image'>
+                <img src="Brainbulb.jpg" alt="Brainbulb"/>
                   </div>
-            </section>
-            <HomeContainer/>
-          </div>
-        <PopupMenu/> 
-        
+                    <section className="section-home">
+                      <div className="div-home">
+                        <h1>QuickB Website</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                      <button className="start-btn">Start Quiz</button>
+                    </div>
+                </section>
+              <HomeContainer/>
+          <Footer/>
+        </div>
+      <PopupMenu/>   
     </Fragment>
   );
 }
