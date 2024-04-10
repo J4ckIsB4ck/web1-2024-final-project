@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
+.card-header{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: underline;
+}
 .card-body{
     display: flex;
     align-items: center;
@@ -50,6 +57,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.carousel.no-transition{
+    scroll-behavior: auto;
 }
 .carousel.dragging{
     scroll-snap-type: none;
