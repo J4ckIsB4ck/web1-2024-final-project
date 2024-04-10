@@ -26,10 +26,8 @@
     font-size: 20px;
     font-weight: 300;
 }
-
-.Link:after,
-.Link:before {
-    border: 1px solid rgba(255, 255, 255, 0);
+.Link:after{
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
     bottom: 0px;
     content: " ";
     display: block;
@@ -39,24 +37,15 @@
     width: 0;
 }
   
-.Link:hover:after,
-.Link:hover:before {
+.Link:hover:after{
     border-color: #fff;
     transition: width 400ms ease-in-out;
-    width: 60%;
-  }
-  
-.Link:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .Link {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    width: auto;
-    height: auto; 
     font-weight: 700;
 }

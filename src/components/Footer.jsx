@@ -5,7 +5,13 @@ function Footer() {
     return (
       <>
         <div className='back-footer'>
-            <h1></h1>
+          <div className='back-footer-child'>            
+            <img src='QuickBlogo.png' alt='QuickB' width="30" height="30"/>
+            <h1>QuickB</h1>
+          </div>
+          <div>
+            <p>Copyright © 2024 The Quiz, Inc.</p>
+          </div>
         </div>
       </>
     );

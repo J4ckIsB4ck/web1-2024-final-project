@@ -2,6 +2,7 @@ import React, { useEffect, Fragment } from 'react';
 import Navbar from "../../components/Navbar";
 import PopupMenu from "../../components/Popupmenu";
 import HomeContainer from "../../components/HomeContainer";
+import Carousel from '../../components/Carousel';
 import Footer from "../../components/Footer";
 import "./Home.css";
 
@@ -40,6 +41,7 @@ function Home() {
                     </div>
                 </section>
               <HomeContainer/>
+            <Carousel/>
           <Footer/>
         </div>
       <PopupMenu/>   
